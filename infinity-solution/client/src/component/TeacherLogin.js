@@ -22,11 +22,8 @@ export default class TeacherLogin extends Component {
     }
 
     componentDidMount(){
-        // axios.get("http://localhost:3001/login/get-schools").then((res) => {
-        //     console.log();
-        //     this.setState({schools : res.data})
-
-        // })
+        sessionStorage.clear();
+            sessionStorage.removeItem("school_id")
     }
 
     handleonchange = (e) => {
@@ -50,8 +47,6 @@ export default class TeacherLogin extends Component {
   render() {
     return (
         <div>
-            {/* {this.state.uservaliadtion === true ? <Navigate to={{ pathname: "/mcq", state : {school_id: this.state.school}}} replace={true} /> : <Navigate to="/" replace={true} />} */}
-            {/* {this.state.uservaliadtion === true ? <Redirect to={{ pathname: "/mcq"}}/> : <Redirect to={{ pathname: "/"}}/>} */}
             {this.state.uservaliadtion === true ? <Navigate to={{ pathname: "/home"}} replace={true} /> : <Navigate to={{ pathname: "/"}} replace={true} />}
             
             <div className="container">
