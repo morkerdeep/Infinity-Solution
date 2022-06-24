@@ -1,0 +1,10 @@
+To Start Client : change Folder to client And --> npm start client
+To Start Server : change Folder to Server And --> nodemon backend.js
+
+And If You get 
+    errno : -4077,
+    code : 'ECONNRESET',
+    syscall: 'read',
+    fatal: true
+
+    --> rs
